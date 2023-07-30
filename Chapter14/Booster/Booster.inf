@@ -19,7 +19,7 @@ Booster_Device_CoInstaller_CopyFiles = 11
 1 = %DiskName%,,,""
 
 [SourceDisksFiles]
-Booster.sys  = 1,,
+14-Booster.sys  = 1,,
 WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
 
 ;*****************************************
@@ -36,7 +36,7 @@ WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with
 CopyFiles=Drivers_Dir
 
 [Drivers_Dir]
-Booster.sys
+14-Booster.sys
 
 ;-------------- Service installation
 [Booster_Device.NT.Services]
@@ -48,7 +48,7 @@ DisplayName    = %Booster.SVCDESC%
 ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
 StartType      = 3               ; SERVICE_DEMAND_START
 ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
-ServiceBinary  = %12%\Booster.sys
+ServiceBinary  = %12%\14-Booster.sys
 
 ;
 ;--- Booster_Device Coinstaller installation ------

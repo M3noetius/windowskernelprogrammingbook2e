@@ -7,7 +7,7 @@ Signature="$WINDOWS NT$"
 Class=BoosterDevice 
 ClassGuid={AE4151AF-8C29-41C3-BB16-0B3115733333}
 Provider=%ManufacturerName%
-CatalogFile=Booster2.cat
+CatalogFile=14-Booster2.cat
 DriverVer= ; TODO: set DriverVer in stampinf property pages
 PnpLockdown=1
 
@@ -19,7 +19,7 @@ Booster2_Device_CoInstaller_CopyFiles = 11
 1 = %DiskName%,,,""
 
 [SourceDisksFiles]
-Booster2.sys  = 1,,
+14-Booster2.sys  = 1,,
 WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
 
 ; define new device class
@@ -44,7 +44,7 @@ HKR,,SilentInstall,,1
 CopyFiles=Drivers_Dir
 
 [Drivers_Dir]
-Booster2.sys
+14-Booster2.sys
 
 ;-------------- Service installation
 [Booster2_Device.NT.Services]
@@ -56,7 +56,7 @@ DisplayName    = %Booster2.SVCDESC%
 ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
 StartType      = 3               ; SERVICE_DEMAND_START
 ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
-ServiceBinary  = %12%\Booster2.sys
+ServiceBinary  = %12%\14-Booster2.sys
 
 ;
 ;--- Booster2_Device Coinstaller installation ------
